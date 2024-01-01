@@ -1,0 +1,35 @@
+.title{
+    height: 20vh;
+    background-color: #1E202B;
+}
+.title .sec .left img{
+    width: 70px;
+}
+.hero{
+    height: 30vh;
+    background-image: url(../gallery/banner.png);
+}
+.hero .input-group input{
+    width: 50%;
+}
+.botm{
+    height: 80vh;
+
+}
+#current
+{
+    background-color: #323544;
+    color: white;
+}
+#top
+{
+    background-color: #2d303d;
+}
+#tomorow{
+    background-color: #323544;
+    color: white;
+}
+#dayafter{
+    background-color: #323544;
+    color: white;
+}

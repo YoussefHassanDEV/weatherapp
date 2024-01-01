@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style  -->
+    <link rel="stylesheet" href="./style/style.css">
+    <!-- tailwind  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Weather</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="title  container-fluid">
+        <div class="sec d-flex justify-content-between container pt-5">
+            <div class="left text-white ps-5 ">
+                <div class="d-flex">
+                    <img src="./gallery/logo@2x.png" alt="">
+                    <div class="d-flex flex-column">
+                        <p>Weather</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right d-flex d-none d-md-block ">
+                <button type="button" class="btn btn-outline-primary mx-2">Primary</button>
+                <button type="button" class="btn btn-outline-primary mx-2">Primary</button>
+                <button type="button" class="btn btn-outline-primary mx-2">Primary</button>
+                <button type="button" class="btn btn-outline-primary mx-2">Primary</button>
+                <button type="button" class="btn btn-outline-primary mx-2">Primary</button>
+            </div>
+            <div class="dropdown 	d-lg-none d-sm-block d-md-none d-xl-none">
+                <button class="btn btn-secondary dropdown-toggle " type="button" id="dropdownMenu2"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button">Action</button>
+                    <button class="dropdown-item" type="button">Another action</button>
+                    <button class="dropdown-item" type="button">Something else here</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="input-group pt-5">
+            <input type="text" class="form-control" placeholder="enter city name ........" aria-label="enter city name ........"
+                aria-describedby="basic-addon2" id="cityName">
+        </div>
+    </div>
+    <div class="botm bg-dark">
+        <div class="forecast d-flex">
+            <div class="current col-md-4 mx-auto position-relative" id="current">
+
+            </div>
+            <br>
+            <div class="tomorow col-md-3 mx-auto position-relative" id="tomorow">
+
+            </div>
+            <div class="thedayafter col-md-3 mx-auto position-relative" id="dayafter"></div>
+        </div>
+    </div>
+
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
