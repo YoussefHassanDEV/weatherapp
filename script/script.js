@@ -1,8 +1,9 @@
 "use strict";
 let input = document.querySelector("#cityName")
 let apiKey = '55e712cfda2d4c67b5e210723240101  ';
+let loc='cairo'
 async function fetchWeatherDataCurrent(val) {
-    let loc = val;
+    loc = val;
     if (loc === '') {
         loc = 'cairo'
     }
@@ -26,7 +27,7 @@ async function fetchWeatherDataCurrent(val) {
     }
 }
 async function fetchWeatherDataCurrent3days(val) {
-    let loc = val;
+     loc = val;
     if (loc === '') {
         loc = 'cairo'
     }
@@ -135,7 +136,8 @@ function showdayafter(dayMaxTemp, dayMinTemp, weathericon, daytext) {
 input.addEventListener("keydown", function () {
     display()
 })
-
+fetchWeatherDataCurrent("cairo")
+fetchWeatherDataCurrent3days("cairo")
 function display() {
     fetchWeatherDataCurrent(input.value)
     fetchWeatherDataCurrent3days(input.value)
